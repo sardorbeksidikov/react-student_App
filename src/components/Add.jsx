@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState} from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const Add = () => {
@@ -13,7 +13,6 @@ const Add = () => {
   const btnClose = () => {
     navigate("/");
   };
-
 
   const hendelChange = (e) => {
     setProduct({ ...product, [e.target.name]: e.target.value.trim() });
@@ -35,22 +34,22 @@ const Add = () => {
         <div className="container">
           <div className="add-product__item">
             <div className="mb-3 container mt-5 border">
-              <label htmlFor="fristname" className="form-label">
+              <label htmlFor="fristname" className="form-label mt-3">
                 FristName
               </label>
               <input
-              name="name"
+                name="name"
                 type="text"
                 id="fristname"
                 className="form-control"
                 value={product.name}
                 onChange={hendelChange}
               />
-              <label htmlFor="lastname" className="form-label">
+              <label htmlFor="lastname" className="form-label mt-3">
                 LastName
               </label>
               <input
-              name="lastName"
+                name="lastName"
                 type="text"
                 id="lastname"
                 className="form-control"
@@ -73,7 +72,7 @@ const Add = () => {
                 htmlFor="doeswork">
                 <input
                   type="checkbox"
-                  className="form-check-input"
+                  className="form-check-input mb-3"
                   value={product.doesWork}
                   id="doeswork"
                   onChange={handleCheckboxChange}
@@ -97,3 +96,6 @@ const Add = () => {
 };
 
 export default Add;
+
+
+

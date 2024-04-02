@@ -609,6 +609,13 @@
       "lastName": "akabarov",
       "group": "N11",
       "doesWork": true
+    },
+    {
+      "id": "d0b5",
+      "name": "Zarina",
+      "lastName": "Ilashboyeva",
+      "group": "N11",
+      "doesWork": false
     }
   ]
 }

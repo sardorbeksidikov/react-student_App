@@ -12,6 +12,10 @@ import Login from "./pages/Login";
 import RequireAuth from "./components/RequireAuth";
 import Add from './components/Add';
 import Edit from "./components/Edit";
+import Dashboard from './components/Dashboard/Dashboard';
+import Deposits from './components/Dashboard/Deposits';
+import Orders from './components/Dashboard/Order';
+import Title from './components/Dashboard/Title';
 
 const App = () => {
   return (
@@ -19,7 +23,6 @@ const App = () => {
       <div>
         <AuthProvider>
           <Header />
-
           <Routes>
             <Route
               path="/"
@@ -51,6 +54,10 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
             <Route path="/add" element={<Add />} />
             <Route path="/edit/:id" element={<Edit />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/deposits" element={<Deposits />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/title" element={<Title />} />
           </Routes>
         </AuthProvider>
       </div>
