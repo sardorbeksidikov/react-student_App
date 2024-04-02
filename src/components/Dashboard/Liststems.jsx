@@ -9,20 +9,23 @@ import PeopleIcon from "@mui/icons-material/People";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import LayersIcon from "@mui/icons-material/Layers";
 import AssignmentIcon from "@mui/icons-material/Assignment";
-import { Link } from 'react-router-dom';
-
+import AccessibilityIcon from "@mui/icons-material/Accessibility";
+import PersonIcon from "@mui/icons-material/Person";
+import { Link } from "react-router-dom";
 
 export const mainListItems = (
   <React.Fragment>
     <ListItemButton>
       <ListItemIcon>
-        <DashboardIcon />
+        <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Teacher" />
+      <Link to={"/main"}>
+        <ListItemText primary="Teacher" />
+      </Link>
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <AccessibilityIcon />
       </ListItemIcon>
       <Link to={"/"}>
         <ListItemText primary="Students" />
@@ -30,7 +33,7 @@ export const mainListItems = (
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <PeopleIcon />
+        <PersonIcon />
       </ListItemIcon>
       <Link to={"/profile"}>
         <ListItemText primary="Profil" />

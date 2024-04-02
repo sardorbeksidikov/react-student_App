@@ -11,9 +11,7 @@ const Header = () => {
     return (
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container>
-          <Link to="/">
-            <Navbar.Brand>LOGO</Navbar.Brand>
-          </Link>
+          
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
