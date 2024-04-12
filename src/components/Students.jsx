@@ -66,11 +66,11 @@ const Students = () => {
           type="search"
           id="search"
           placeholder="Search"
-          className="form-control w-75"
+          className="form-control w-75 mt-4"
           onChange={Filter}
         />
 
-        <Link className="btn btn-success" to={'/add'}>
+        <Link className="btn btn-success mt-4" to={'/add'}>
           Add
         </Link>
       </div>
@@ -122,7 +122,7 @@ const Students = () => {
       <nav>
         <ul className="pagination">
           <li className="page-item">
-            <button className="page-link" onClick={handlePrePage}>
+            <button className="page-link mb-3" onClick={handlePrePage}>
               Prev
             </button>
           </li>
@@ -131,7 +131,7 @@ const Students = () => {
               key={number}
               className={`page-item ${currentPage === number && "active"}`}>
               <button
-                className="page-link"
+                className="page-link mb-3"
                 onClick={() => handleChangePage(number)}>
                 {number}
               </button>

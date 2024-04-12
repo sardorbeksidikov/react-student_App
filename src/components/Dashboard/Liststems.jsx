@@ -19,7 +19,7 @@ export const mainListItems = (
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <Link to={"/main"}>
+      <Link>
         <ListItemText primary="Teacher" />
       </Link>
     </ListItemButton>
